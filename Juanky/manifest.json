@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "VisualizeYourself",
+  "description": "Presents your total website usage",
+  "version": "1.0",
+
+  "permissions": [
+    "history"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "visualizeyourself.html"
+  },
+  "options_page": "options.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google.com https://platform.twitter.com; object-src 'self'"
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Web Timer",
+  "version": "1.4.8",
+  "description": "Keep track of how you spend your time on the web.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "idle",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "Web Timer",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google.com https://platform.twitter.com; object-src 'self'"
+}
